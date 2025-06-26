@@ -1,0 +1,6 @@
+# dedencencies
+/node_modules
+
+
+# misc
+.env
