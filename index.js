@@ -7,7 +7,7 @@ const connectDB = require("./config/db.config");
 
 // initilization
 const app = express();
-const port = 8000;
+
 
 // connect db
 connectDB();
@@ -41,9 +41,9 @@ app.use("/api/auth", authRoutes);
 
 
 // listen server
-app.listen(port,
+app.listen(process.env.PORT || 8000,
     () => {
-        console.log(`Server running on port: ${port}`);
+        console.log(`Server running on port: ${process.env.PORT || 8000}`);
 
     });
 
